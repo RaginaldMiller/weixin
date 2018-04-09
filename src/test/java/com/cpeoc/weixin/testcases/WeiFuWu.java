@@ -1,9 +1,14 @@
 package com.cpeoc.weixin.testcases;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Set;
+
+
 
 
 
@@ -22,11 +27,12 @@ import org.testng.annotations.Test;
 
 import com.cpeoc.weixin.BaseDriver;
 import com.cpeoc.weixin.util.WeixinUtil;
-
+@Epic("微服务")
 public class WeiFuWu extends BaseDriver {
 
 
 	@Test(dataProvider="menu")
+	@Description("打开微服务菜单")
 	public void testOpenMenu(String menu,String childMenu,final String expect) throws InterruptedException {
 		WeixinUtil.openChinaPost(driver);
 		driver.findElementById(menu).click();
@@ -64,16 +70,23 @@ public class WeiFuWu extends BaseDriver {
 		//截图 保存到测试报告中
 		if(!flag){
 			driver.context("NATIVE_APP");
-			File scrFile = driver.getScreenshotAs(OutputType.FILE);		
-			String currentPath = System.getProperty("user.dir"); 
+			
 			try {
-				String fileName = expect+".png";
-				FileUtils.copyFile(scrFile,new File(currentPath +"\\tmp\\screenShot\\" + fileName));
-				Reporter.log("<img src="+currentPath +"\\tmp\\screenShot\\" + fileName + " />", true);  
-				
-			} catch (Exception e) {	
-				Assert.fail("截图失败！");
+				takeScreenShot(expect);
+			} catch (IOException e) {
+				Assert.fail("截图失败！"+e.getMessage());
 			}
+			
+//			File scrFile = driver.getScreenshotAs(OutputType.FILE);		
+//			String currentPath = System.getProperty("user.dir"); 
+//			try {
+//				String fileName = expect+".png";
+//				FileUtils.copyFile(scrFile,new File(currentPath +"\\tmp\\screenShot\\" + fileName));
+//				Reporter.log("<img src="+currentPath +"\\tmp\\screenShot\\" + fileName + " />", true);  
+//				
+//			} catch (Exception e) {	
+//				Assert.fail("截图失败！");
+//			}
 			
 		}
 		//返回微信首页

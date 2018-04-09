@@ -1,13 +1,16 @@
 package com.cpeoc.weixin;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import io.appium.java_client.AppiumDriver;
+import io.qameta.allure.Attachment;
 
 import org.junit.BeforeClass;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
@@ -79,5 +82,11 @@ public class BaseDriver {
 	public void afterTest(){
 		driver.context("NATIVE_APP");
 	}
+	
+	 @Attachment(value = "失败截图", type = "image/png")
+	public byte[] takeScreenShot(String methodName) throws IOException {
+	       return driver.getScreenshotAs(OutputType.BYTES);
+	 }
+	
 	
 }
