@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="331108" started-at="2018-04-09T09:17:44Z" finished-at="2018-04-09T09:23:16Z">
+  <suite name="Default suite" duration-ms="309518" started-at="2018-04-10T02:36:00Z" finished-at="2018-04-10T02:41:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="331108" started-at="2018-04-09T09:17:44Z" finished-at="2018-04-09T09:23:16Z">
+    <test name="Default test" duration-ms="309518" started-at="2018-04-10T02:36:00Z" finished-at="2018-04-10T02:41:10Z">
       <class name="com.cpeoc.weixin.testcases.WeiFuWu">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="beforeSuite" is-config="true" duration-ms="25081" started-at="2018-04-09T17:17:19Z" finished-at="2018-04-09T17:17:44Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="beforeSuite" is-config="true" duration-ms="24099" started-at="2018-04-10T10:35:36Z" finished-at="2018-04-10T10:36:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="75087" started-at="2018-04-09T17:17:44Z" data-provider="menu" finished-at="2018-04-09T17:19:00Z">
+        <test-method status="PASS" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="72804" started-at="2018-04-10T10:36:00Z" data-provider="menu" finished-at="2018-04-10T10:37:13Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenMenu -->
-        <test-method status="FAIL" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="55659" started-at="2018-04-09T17:19:00Z" data-provider="menu" finished-at="2018-04-09T17:19:55Z">
+        <test-method status="FAIL" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="48018" started-at="2018-04-10T10:37:13Z" data-provider="menu" finished-at="2018-04-10T10:38:01Z">
           <params>
             <param index="0">
               <value>
@@ -92,7 +92,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenMenu -->
-        <test-method status="PASS" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="44173" started-at="2018-04-09T17:19:55Z" data-provider="menu" finished-at="2018-04-09T17:20:40Z">
+        <test-method status="PASS" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="41916" started-at="2018-04-10T10:38:01Z" data-provider="menu" finished-at="2018-04-10T10:38:43Z">
           <params>
             <param index="0">
               <value>
@@ -113,7 +113,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenMenu -->
-        <test-method status="PASS" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="74683" started-at="2018-04-09T17:20:40Z" data-provider="menu" finished-at="2018-04-09T17:21:54Z">
+        <test-method status="PASS" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="73153" started-at="2018-04-10T10:38:43Z" data-provider="menu" finished-at="2018-04-10T10:39:56Z">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenMenu -->
-        <test-method status="PASS" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="81069" started-at="2018-04-09T17:21:54Z" data-provider="menu" finished-at="2018-04-09T17:23:15Z">
+        <test-method status="PASS" signature="testOpenMenu(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="testOpenMenu" duration-ms="73231" started-at="2018-04-10T10:39:56Z" data-provider="menu" finished-at="2018-04-10T10:41:09Z">
           <params>
             <param index="0">
               <value>
@@ -155,11 +155,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenMenu -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="afterTest" is-config="true" duration-ms="245" started-at="2018-04-09T17:23:15Z" finished-at="2018-04-09T17:23:16Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="afterTest" is-config="true" duration-ms="274" started-at="2018-04-10T10:41:09Z" finished-at="2018-04-10T10:41:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="afterSuite" is-config="true" duration-ms="4236" started-at="2018-04-09T17:23:16Z" finished-at="2018-04-09T17:23:20Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.cpeoc.weixin.testcases.WeiFuWu@29f69090]" name="afterSuite" is-config="true" duration-ms="4243" started-at="2018-04-10T10:41:10Z" finished-at="2018-04-10T10:41:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
