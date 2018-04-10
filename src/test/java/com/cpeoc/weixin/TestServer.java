@@ -6,16 +6,26 @@ public class TestServer {
 	public static void main(String[] args) {
 		
 		
+//		try {
+//			AppiumServerUtil.startAppiumServer();
+//			//异步线程去执行cmd
+//			
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//		
+//		
+//		AppiumServerUtil.stopAppiumServer();
+
+		
+		long currentTimeMillis1 = System.currentTimeMillis();
 		try {
-			AppiumServerUtil.startAppiumServer();
-			//异步线程去执行cmd
-			
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
-		AppiumServerUtil.stopAppiumServer();
-		
+		long currentTimeMillis2 = System.currentTimeMillis();
+		System.out.println(currentTimeMillis2-currentTimeMillis1);
 	}
 }	

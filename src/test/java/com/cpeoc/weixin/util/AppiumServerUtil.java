@@ -26,7 +26,7 @@ public class AppiumServerUtil {
 		int serverStartUpTimeOut = 20000;// 单位毫秒
 		int servertPort = portList.get(0);
 		int bsPort = portList.get(1);
-		String cmd = "appium -a " + serverhost + " -U \"" + deviceName
+		String cmd = "start /b appium -a " + serverhost + " -U \"" + deviceName
 				+ "\" -p " + servertPort + " -bp " + bsPort + " > tmp"
 				+ File.separator + deviceName.replaceAll(":", ".")
 				+ "AppiumServer.log";
