@@ -76,14 +76,18 @@ public class BaseDriver {
 	 */
 	@AfterSuite(alwaysRun=true)
 	public void afterSuite(){
-		driver.quit();
+		if(null != driver){
+			driver.quit();
+		}
 		AppiumServerUtil.stopAppiumServer();
 	}
 	
 	
 	@AfterTest(alwaysRun=true)
 	public void afterTest(){
-		driver.context("NATIVE_APP");
+		if(null != driver){
+			driver.context("NATIVE_APP");
+		}		
 	}
 	
 	 @Attachment(value = "失败截图", type = "image/png")

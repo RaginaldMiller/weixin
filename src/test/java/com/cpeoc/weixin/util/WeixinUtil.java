@@ -9,7 +9,8 @@ public class WeixinUtil {
 	public static void openChinaPost(AppiumDriver<WebElement> driver) {
 
 		driver.findElementById("搜索").click();
-		WebElement sousuo = driver.findElementById("com.tencent.mm:id/ht");
+		//WebElement sousuo = driver.findElementById("com.tencent.mm:id/ht");
+		WebElement sousuo = driver.findElementByXPath("//*[contains(text(),'搜索')]");
 		sousuo.click();
 		sousuo.sendKeys("中国邮政");
 		driver.findElementById("com.tencent.mm:id/kr").click();
