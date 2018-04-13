@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [weixin]">
+  <test name="testOpen(failed)">
     <classes>
+      <class name="com.cpeoc.weixin.testcases.WeiShangCheng">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.cpeoc.weixin.testcases.WeiShangCheng -->
+      <class name="com.cpeoc.weixin.testcases.FenSiZhuanXiang">
+        <methods>
+          <include name="testOpenMenu" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.cpeoc.weixin.testcases.FenSiZhuanXiang -->
       <class name="com.cpeoc.weixin.testcases.WeiFuWu">
         <methods>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-<<<<<<< HEAD
           <include name="testOpenMenu" invocation-numbers="0"/>
-=======
-          <include name="testOpenMenu" invocation-numbers="1"/>
->>>>>>> refs/remotes/choose_remote_name/master
-          <include name="beforeSuite"/>
         </methods>
       </class> <!-- com.cpeoc.weixin.testcases.WeiFuWu -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- testOpen(failed) -->
+</suite> <!-- Failed suite [weixin] -->

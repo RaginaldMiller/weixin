@@ -3,8 +3,10 @@
 
 <suite name="weixin" >
   <test name="testOpen">
-    <packages>
-    	<package name="com.cpeoc.weixin.testcases"></package>
-    </packages>  
+    <classes>
+    	<class name="com.cpeoc.weixin.testcases.FenSiZhuanXiang"></class>
+    	<class name="com.cpeoc.weixin.testcases.WeiFuWu"></class>
+    	<class name="com.cpeoc.weixin.testcases.WeiShangCheng"></class>
+    </classes>  
   </test>
 </suite>

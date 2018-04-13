@@ -2,8 +2,11 @@ package com.cpeoc.weixin.testcases;
 
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
 
 import java.util.Set;
+
+
 
 
 
@@ -21,13 +24,14 @@ import org.testng.annotations.Test;
 
 import com.cpeoc.weixin.BaseDriver;
 import com.cpeoc.weixin.util.WeixinUtil;
-
+@Epic("微服务模块")
 public class WeiFuWu extends BaseDriver {
 
 
 	@Test(dataProvider="menu")
-	//@Description("xxxxx")
+	@Description("打开菜单")
 	public void testOpenMenu(String menu,String childMenu,final String expect) throws InterruptedException {
+//		System.out.println(menu+":"+childMenu+":"+expect);
 		WeixinUtil.openChinaPost(driver);
 		//driver.findElementById(menu).click();
 		String menuXpath =  "//*[contains(@text,'"+menu+"')]";
@@ -64,21 +68,15 @@ public class WeiFuWu extends BaseDriver {
 			}
 					
 		}
-		//截图 保存到测试报告中
-//		if(!flag){
-//			driver.context("NATIVE_APP");
-//			File scrFile = driver.getScreenshotAs(OutputType.FILE);		
-//			String currentPath = System.getProperty("user.dir"); 
-//			try {
-//				String fileName = expect+".png";
-//				FileUtils.copyFile(scrFile,new File(currentPath +"\\tmp\\screenShot\\" + fileName));
-//				Reporter.log("<img src="+currentPath +"\\tmp\\screenShot\\" + fileName + " />", true);  
-//				
-//			} catch (Exception e) {	
-//				Assert.fail("截图失败！");
-//			}
-//			
-//		}
+		//失败截图 
+		if(!flag){		
+			try {
+				driver.context("NATIVE_APP");
+				takeScreenShot(expect);							
+			} catch (Exception e) {	
+				Assert.fail("截图失败！");
+			}		
+		}
 		//返回微信首页
 		WeixinUtil.goBackWeChat(driver);
 		//断言
@@ -94,7 +92,6 @@ public class WeiFuWu extends BaseDriver {
 				{ "微服务", "//*[@text='政务导航']","公共服务"},
 				{ "微服务", "//*[@text='金融服务']","投资理财"},
 				{ "微服务", "//*[@text='寄递服务']","寄递指南"},
-
 				};
 	}
 }
