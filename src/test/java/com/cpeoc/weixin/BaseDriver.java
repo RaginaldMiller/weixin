@@ -70,7 +70,9 @@ public class BaseDriver {
 	 */
 	@AfterSuite(alwaysRun=true)
 	public void afterSuite(){
-		driver.quit();
+		if(null != driver){
+			driver.quit();
+		}
 		AppiumServerUtil.stopAppiumServer();
 	}
 	
