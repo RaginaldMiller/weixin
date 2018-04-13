@@ -73,6 +73,7 @@ public class BaseDriver {
 		if(null != driver){
 			driver.quit();
 		}
+		driver.quit();
 		AppiumServerUtil.stopAppiumServer();
 	}
 	
