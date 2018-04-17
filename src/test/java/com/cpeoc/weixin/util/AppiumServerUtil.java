@@ -22,7 +22,7 @@ public class AppiumServerUtil {
 		portList = PortUtil.getAvailablePortList(2);
 		String serverhost = Config.serverHost;
 		String deviceName = Config.deviceName;
-		int serverStartUpTimeOut = 20000;// 单位毫秒
+		int serverStartUpTimeOut = 60000;// 单位毫秒
 		int servertPort = portList.get(0);
 		int bsPort = portList.get(1);
 		String cmd = "appium -a " + serverhost + " -U \"" + deviceName

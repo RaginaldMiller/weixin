@@ -74,7 +74,8 @@
                     <suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<workingDirectory>target/</workingDirectory>
+					<!-- 这个工作目录配置后appium server无法启动 -->
+					<!--<workingDirectory>target/</workingDirectory>-->
                 </configuration>
                 <dependencies>
                     <dependency>
